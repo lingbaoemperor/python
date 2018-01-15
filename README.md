@@ -1,2 +1,2 @@
 # python
-daily something
+Something about python.
