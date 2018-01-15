@@ -41,11 +41,11 @@ class IP(Structure):
             ("src", c_ulong),
             ("dst", c_ulong)
         ]
-    #用来创建实例
+    #create
     def __new__(self, socket_buffer=None):
 		#返回一个ctypes实例,此处是IP类的实例(继承)
         return self.from_buffer_copy(socket_buffer)
-    #初始化实例
+    #initialize
     def __init__(self, socket_buffer=None):
         # map protocol constants to their names
         self.protocol_map = {1:"ICMP", 6:"TCP", 17:"UDP"}
