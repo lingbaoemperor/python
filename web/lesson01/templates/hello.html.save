@@ -1,0 +1,5 @@
+{# 继承base.html#}
+{% extend "base.html" %}
+{% block a %
+}
+<hl>{{hello}}</hl>
